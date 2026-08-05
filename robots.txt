@@ -1,0 +1,24 @@
+# J's Bite — https://www.jsbite.com  (replace with your real domain on deploy)
+User-agent: *
+Allow: /
+
+# Source/reference material — not part of the public site
+Disallow: /Reference/
+
+# Big AI answer-engine crawlers (explicitly welcomed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://www.jsbite.com/sitemap.xml
