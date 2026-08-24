@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J's Bite — Lost a Bite?</title>
+<link rel="icon" href="assets/brand/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WQSS92NYFN"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WQSS92NYFN');
+gtag('event', 'page_not_found', { page_path: location.pathname });
+</script>
+<!-- End Google Analytics 4 -->
+<style>
+:root{--green:#1C5A41;--green-2:#2a8763;--green-dark:#12402e;--orange:#F06B0E;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;
+  background:var(--green);overflow:hidden;position:relative}
+@keyframes fbob{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-18px) rotate(3deg)}}
+@keyframes fbob2{0%,100%{transform:translateY(0) rotate(4deg)}50%{transform:translateY(16px) rotate(-4deg)}}
+.float{position:fixed;pointer-events:none;filter:drop-shadow(0 16px 14px rgba(0,0,0,.35));z-index:1;opacity:.9}
+.f1{top:12%;left:7%;width:200px;animation:fbob 6s ease-in-out infinite}
+.f2{bottom:12%;right:9%;width:150px;animation:fbob2 7s ease-in-out infinite}
+.box{position:relative;z-index:2;padding:24px}
+.code{font-family:'Luckiest Guy',cursive;font-size:clamp(90px,22vw,200px);line-height:.9;text-shadow:0 8px 0 rgba(0,0,0,.3)}
+.code span{color:var(--orange)}
+h1{font-family:'Luckiest Guy',cursive;font-size:clamp(26px,5vw,44px);margin-top:6px;letter-spacing:1px}
+p{margin-top:14px;font-weight:600;opacity:.92;max-width:30ch;margin-left:auto;margin-right:auto}
+a.home{display:inline-block;margin-top:26px;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:16px;
+  padding:15px 30px;border-radius:30px;box-shadow:0 6px 0 rgba(0,0,0,.25);transition:transform .12s}
+a.home:active{transform:scale(.95)}
+@media(prefers-reduced-motion:reduce){.float{animation:none}}
+</style>
+</head>
+<body>
+<img class="float f1" src="assets/hero/hero-burger.png" alt="" onerror="this.remove()">
+<img class="float f2" src="assets/hero/hero-fries.png" alt="" onerror="this.remove()">
+<div class="box">
+  <div class="code">4<span>0</span>4</div>
+  <h1>Lost a Bite?</h1>
+  <p>This page slipped off the tray. Let's get you back to the good stuff.</p>
+  <a class="home" href="index.html">Back to J's Bite →</a>
+</div>
+</body>
+</html>
